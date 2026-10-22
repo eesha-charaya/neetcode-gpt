@@ -6,8 +6,7 @@ class Solution:
     def sigmoid(self, z: NDArray[np.float64]) -> NDArray[np.float64]:
         # z is a 1D NumPy array
         # Formula: 1 / (1 + e^(-z))
-        sigma_z = 1 / (np.exp(-z) + 1)
-        return np.round(sigma_z, 5)
+        return np.round(1 / (1 + np.exp(-z)), 5)
         
 
     def relu(self, z: NDArray[np.float64]) -> NDArray[np.float64]:
