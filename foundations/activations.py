@@ -15,5 +15,8 @@ class Solution:
         # method 1
         # return np.where(z<0,0,z)
         # method 2
-        return np.maximum(0,z)
+        # return np.maximum(0,z)
+        # method 3
+        z[z<0] = 0
+        return z
 
