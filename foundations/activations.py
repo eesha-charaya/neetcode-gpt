@@ -12,4 +12,8 @@ class Solution:
     def relu(self, z: NDArray[np.float64]) -> NDArray[np.float64]:
         # z is a 1D NumPy array
         # Formula: max(0, z) element-wise 
-        return np.where(z<0,0,z)
+        # method 1
+        # return np.where(z<0,0,z)
+        # method 2
+        return np.maximum(0,z)
+
