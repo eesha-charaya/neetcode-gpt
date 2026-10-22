@@ -10,5 +10,3 @@ class Solution:
             x = x - learning_rate * 2 * x
             iterations -= 1
         return round(x, 5)
-            
-        
